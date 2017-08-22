@@ -1,0 +1,18 @@
+<h1>List of Users Favorite Activities</h1>
+<h2>Demo list with images</h2>
+<p>Data retrieved from JSON API</p>
+
+<div *ngFor="let album of albums" class="card">
+    <h3 class="card-header">{{album.title}}</h3>
+    <div class="card-block">
+      <h5 class="card-title">Album url: {{album.url}}</h5>
+    </div>
+    <img style="height: 200px; display: block;" src="{{album.thumbnailUrl}}" alt="{{album.title}} image">
+    <div class="card-block">
+      <a href="#" class="card-link">Activity link</a>
+     
+    </div>
+    <div class="card-footer text-muted text-xs-center">
+      2 days ago
+    </div>
+</div>
